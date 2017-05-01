@@ -1,0 +1,24 @@
+{% extends "EXCOCoreBundle::layout.html.twig" %}
+
+{% block title %}
+	Page d'accueil - {{ parent() }}
+{% endblock %}
+
+{% block body %}
+
+	<h2>Homepage</h2>
+
+
+	{% for message in app.session.flashbag.get('info') %}
+		<div class="alert alert-info">Message flash : {{ message }}</div>
+	{% endfor %}
+
+
+	<h3>Dernières annonces</h3>
+	{{ render(controller("EXCOPlatformBundle:Advert:menu", {'limit': 3})) }}
+
+
+
+
+
+{% endblock %}

@@ -1,0 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
+#formulaire{
+  margin: 50px auto;
+  text-align: center;
+}
+
+#admin {
+  background-color: white;
+  margin: 50px auto;
+  text-align: center;
+}
+
+#admin a {
+  text-decoration: none;
+  color: red;
+}

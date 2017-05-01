@@ -1,0 +1,94 @@
+@media screen and (max-width: 1024px) {
+    .ecke {
+        width: 80px;
+    }
+    header .banner {
+        padding: 0 25px;
+    }
+    #flex a {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        margin: 0 auto;
+    }
+    #flex2,
+    .product {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+    .product img,
+    #quantity img {
+        width: 50%;
+    }
+    .the > img {
+        display: none;
+    }
+    #column {
+        -webkit-column-count: 1;
+        -moz-column-count: 1;
+        column-count: 1;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    #panier {
+        text-align: center;
+        margin-top: 25px;
+        padding: 10px 15px 10px 5px;
+        position: fixed;
+        left: 0;
+        top: 25px;
+        z-index: 10000;
+        background-color: #96B011;
+        border-radius: 0 50px 50px 0;
+        box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1);
+    }
+    #panier span {
+        display: none;
+    }
+    #panier strong::before {
+        font-size: 1.6rem;
+    }
+    #panier strong {
+        font-size: 1.4rem;
+    }
+    #logo {
+        margin-top: 75px;
+    }
+    #logo,
+    header nav,
+    #bottom,
+    #detail,
+    #quantity {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ecke,
+    #panier p::before,
+    #pub,
+    .flexslider {
+        display: none;
+    }
+    .product img,
+    #quantity img {
+        width: inherit;
+    }
+    #rating {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+    .left,
+    .right {
+        float: none;
+        margin: 25px 0 0;
+    }
+    #info article {
+        -ms-flex-preferred-size: 50%;
+        flex-basis: 50%;
+        text-align: center;
+    }
+}

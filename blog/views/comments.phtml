@@ -1,0 +1,23 @@
+ <header class="comment__header">
+                  <img src="assets/images/co1.jpg" class="comment__avatar">
+                  <div class="comment__author">
+                    <strong><?=$comment['user_name']?></strong>
+                    <span><?=$comment['comments_date']?></span>
+                  </div>
+                </header>
+                <div class="comment__text">
+                 <?=$comment['comments_content']?>
+                </div>
+                <nav class="comment__actions">
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" role="presentation">thumb_up</i><span class="visuallyhidden">like comment</span>
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" role="presentation">thumb_down</i><span class="visuallyhidden">dislike comment</span>
+                  </button>
+                  <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+                    <i class="material-icons" role="presentation">share</i><span class="visuallyhidden">share comment</span>
+                  </button>
+                </nav>
+               
+             

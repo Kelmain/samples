@@ -1,0 +1,9 @@
+exco_core_home:
+    path:      /
+    defaults:
+        _controller: EXCOCoreBundle:Core:index
+
+exco_core_contact:
+    path:      /contact
+    defaults:
+        _controller: EXCOCoreBundle:Core:contact
